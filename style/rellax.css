@@ -1,0 +1,110 @@
+.colored-circles {
+  border-radius: 50%;
+  position: absolute;
+  z-index: 10;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+}
+
+.cube {
+  border-radius: 0;
+  -webkit-transform: rotate(45deg) !important;
+          transform: rotate(45deg) !important;
+}
+
+.first {
+  width: 20px;
+  height: 20px;
+  background-color: #FF0000;
+  top: 60%;
+  left: 10%;
+}
+
+.second {
+  width: 20px;
+  height: 20px;
+  background-color: #FF0000;
+  top: 30%;
+  left: 20%;
+}
+
+.third {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.5);
+  top: 40%;
+  left: 30%;
+}
+
+.fourth {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.5);
+  top: 15%;
+  left: 40%;
+}
+
+.fifth {
+  width: 20px;
+  height: 20px;
+  background-color: #FF0000;
+  top: 35%;
+  left: 50%;
+}
+
+.sixth {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.7);
+  top: 70%;
+  left: 55%;
+}
+
+.seventh {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.8);
+  top: 25%;
+  left: 65%;
+}
+
+.eigth {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.6);
+  top: 55%;
+  left: 75%;
+}
+
+.ninth {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 0, 0, 0.5);
+  top: 10%;
+  left: 85%;
+}
+
+.tenth {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 0, 0, 0.5);
+  top: 45%;
+  left: 90%;
+}
+
+@media screen and (max-width: 600px) {
+  .ninth {
+    display: none;
+  }
+
+  .tenth {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .seventh {
+    display: none;
+  }
+}
