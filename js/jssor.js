@@ -4,7 +4,7 @@ jssor_1_slider_init = function() {
               $AutoPlay: 1,
               $Idle: 2000,
               $SlideEasing: $Jease$.$InOutSine,
-              $DragOrientation: 3,
+              $DragOrientation: 0,
               $ArrowNavigatorOptions: {
                 $Class: $JssorArrowNavigator$
               },

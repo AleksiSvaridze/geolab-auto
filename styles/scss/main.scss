@@ -12,7 +12,7 @@ h1, h2, h3 {
     text-transform: uppercase;
     color: $black;
     font-size: $h1h2;
-	letter-spacing: 6px;
+	letter-spacing: 6px;  
 }
 label {
 	font-family: $CondensedLight;
@@ -61,7 +61,7 @@ div.burgerMenu {
 	cursor: pointer;
 	width: 45px;
 	height: 30px;
-	z-index: 10;
+	z-index: 1000;
 }
 div.burgerItem {
 	position: absolute;
@@ -107,9 +107,10 @@ div.burgerMenu.openBurger div.burgerItem.bottom {
 	width: 0;
 	height: 0;
 	transition: width .3s, height .3s;
-	background-color: rgba(255,255,255, .5);
+	background-color: rgba(255,255,255, .9);
 	overflow: hidden;
 	border-radius: 0 0 100% 0;
+	z-index: 900;
 }
 div.burgerMenu.openHiddenMenu + .hidden-menu {
 	width: 100%;
@@ -166,7 +167,7 @@ h2.service-title {
 	width: 100%;
 	height: 160px;
 	bottom: 80px;
-	background: url(../img/mountains.png) repeat-x;
+	background: url(../../img/mountains.png) repeat-x;
 }
 .trees {
 	position: absolute;
@@ -176,7 +177,7 @@ h2.service-title {
 	width: 100%;
 	height: 297px;
 	bottom: 65px;
-	background: url(../img/trees.png) no-repeat;	
+	background: url(../../img/trees.png) no-repeat;	
 }
 .bus {
 	position: absolute;
@@ -184,7 +185,7 @@ h2.service-title {
 	width: 262px;
 	height: 138px;
 	bottom: 28px;
-	background: url(../img/bus.png) no-repeat;
+	background: url(../../img/bus.png) no-repeat;
 }
 
 
@@ -206,7 +207,7 @@ h2.service-title {
 	width: 100%;
 	height: 5px;
 	bottom: 30px;
-	background: url(../img/road.png) repeat-x;
+	background: url(../../img/road.png) repeat-x;
 }
 /* ==== Contact ===============*/
 .contact {
@@ -725,6 +726,23 @@ label.error-message {
 	.success-wrapper {
 		display: block;
 		padding: 0 20px 0 0px;
+	}
+	.mountains {
+		width: 100%;
+		height: 195px;
+		bottom: 65px;
+	}
+	.trees {
+		left: 50%;
+		transform: translateX(-50%);
+		max-width: 1340px;
+		width: 100%;
+		height: 290px;
+		bottom: 65px;
+	}
+	.bus {
+		right: 10px;
+		bottom: 28px;
 	}
 }
 
